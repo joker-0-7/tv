@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/admin.css">
+
+    <title>Document</title>
+</head>
+<body>
+  <div class="header">
+    <a href="./thegets.html">الرئسية</a>
+    <a href="./ruz2.html">المدرسة</a>
+    <a href="./data1.html">بيانات المستخدم</a>
+    <a href="./data2.html"> 2 بيانات المستخدم</a>
+    <a href="./code.html"> الكود</a>
+  </div>
+    <div id="app">
+        <div class="container">
+            <table class="table caption-top">
+  <caption>List of users : {{thirdInformition.length}}</caption>
+  <thead>
+    <tr>
+      <th scope="col">name</th>
+      <th scope="col">phone</th>
+      <th scope="col">email</th>
+      <th scope="col">full name</th>
+      <th scope="col">data number</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr v-for="info  in thirdInformition">
+      <th scope="row"> {{info.name}} </th>
+      <th scope="row"> {{info.phone}} </th>
+      <th scope="row"> {{info.email}} </th>
+      <th scope="row"> {{info.fullName}} </th>
+      <th scope="row"> {{info.number}} </th>
+    </tr>
+  </tbody>
+</table>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+    <script src="../js/admin/admin.js" type="module"></script>
+</body>
+</html>
